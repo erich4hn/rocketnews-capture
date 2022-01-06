@@ -1,0 +1,209 @@
+:root {
+  --body-bg-color: #121214;
+  --text-color: #E1E1E6;
+  --title-color: #04D361;
+  --form-color: #A8A8A8;
+  --bg-button-color: #8257e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg-color);
+}
+
+main {
+  display: flex;
+}
+
+.left {
+  flex-basis: 50%;
+  height: 100vh;
+  padding: 50px 30px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.left .logo {
+  width: 389px;
+  height: 94px;
+  margin-bottom: 92px;
+}
+
+.left .logo img {
+  width: 100%;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.left .logo img:hover {
+  opacity: 0.7;
+  transition-property: opacity;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.left .description {
+  line-height: 2.1rem;
+  margin-bottom: 50px;
+}
+
+.left .description h1 {
+  font-size: 1.5rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.left .description h2 {
+  font-size: 0.875rem;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.left .description p {
+  font-size: 0.875rem;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.left .newsletter-form {
+  margin-bottom: 50px;
+}
+
+.left .newsletter-form form fieldset {
+  border: none;
+}
+
+.left .newsletter-form form fieldset legend {
+  color: var(--form-color);
+  font-size: 0.875rem;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+.left .newsletter-form form fieldset .input-group {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-basis: 100%;
+  height: 48px;
+  -webkit-filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+.left .newsletter-form form fieldset .input-group .input-border {
+  width: 5px;
+  background-color: var(--title-color);
+  height: 100%;
+}
+
+.left .newsletter-form form fieldset .input-group input {
+  height: 100%;
+  border: none;
+  padding: 0 20px;
+  font-size: 0.75rem;
+  font-family: 'Work Sans', sans-serif;
+  color: #6A6A6A;
+  flex-basis: 100%;
+}
+
+.left .newsletter-form form fieldset .input-group input:focus {
+  outline: solid var(--title-color);
+  z-index: 1;
+}
+
+.left .newsletter-form form fieldset .input-group button {
+  height: 100%;
+  border: none;
+  padding: 0 15px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-button-color);
+  transition-duration: 1s;
+}
+
+.left .newsletter-form form fieldset .input-group button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.left .newsletter-form form fieldset .input-group button img {
+  width: 80px;
+  color: #FFFFFF;
+}
+
+.left .go-to {
+  width: 200px;
+}
+
+.left .go-to a {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: 'Spartan', sans-serif;
+  color: var(--bg-button-color);
+  text-decoration: none;
+  transition-duration: 180ms;
+}
+
+.left .go-to a:hover {
+  transform: translateX(20px);
+  transition-property: transform;
+  transition-duration: 180ms;
+  transition-timing-function: ease-in-out;
+  text-decoration: underline;
+}
+
+.left .go-to a img {
+  margin-left: 5px;
+}
+
+.left .credits {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.left .credits p {
+  font-size: 0.75rem;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.left .credits p a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.left .credits p a:hover {
+  text-decoration: underline;
+}
+
+.right {
+  flex-basis: 50%;
+  height: 100vh;
+}
+
+.right img {
+  width: 100%;
+  height: 100%;
+}
